@@ -18,8 +18,7 @@
     });
   
     async function quizApp() {
-      updateScoreBoard();
-      addPlaceholder();
+     
       const data = await fetchQuiz();
       question = data[0].question;
       options = [];
@@ -50,7 +49,7 @@
     }
   
     function generateTemplate(question, options, answer) {
-      removePlaceHolder();
+      
       optionsEl.innerHTML = "";
       qusEl.innerHTML = question;
       options.map((option, index) => {
@@ -151,15 +150,6 @@
   
       quizApp();
     }
-    function addPlaceholder() {
-      const placeholder = document.createElement("div");
-      placeholder.classList.add("placeholder");
-      containerEl.appendChild(placeholder);
-    }
-  
-    function removePlaceHolder() {
-      const placeholderEl = document.querySelector(".container .placeholder");
-      containerEl.removeChild(placeholderEl);
-    }
+   
   })();
   

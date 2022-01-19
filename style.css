@@ -118,18 +118,7 @@
   .container .result-overlay .final-result {
     font-size: 5rem;
   }
-  .container .placeholder {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url(https://i.postimg.cc/Zn7XmJhw/placeholder.png);
-    background-color: rgb(40, 40, 44);
-    background-position: center;
-    background-size: 90%;
-    background-repeat: no-repeat;
-  }
+  
   
   @media (max-width: 768px) {
     html {
